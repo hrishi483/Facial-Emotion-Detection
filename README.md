@@ -10,9 +10,17 @@ Dataset contain 35,685 examples of 48x48 pixel gray scale images of faces divide
 
 ## Model 
 - I have used a custom model including CNN ,max pooling and linear layers. The model architecture can be found in file `main.py`. Also added normalization and dropout layers to reduce overfitting. 
-- Train accuracy: 85.06170382165605% Validation accuracy=61.76709624985487% There is still scope to reduce overfitting.
-- 
+- Train accuracy: 85.06170382165605% Validation accuracy=61.76709624985487% there is still a lot of scope to reduce overfitting.
 
+## Usage
+- haarcascade_frontalface_default.xml is used to detect exact faces in the image, this is directly used from https://github.com/opencv/opencv/tree/4.x/data/haarcascades.
+- Funtion predict_with_labels predicts the emotion present in the image, it takes image and the cascade to detect faces as input arguments.
+
+  ## Further Scope  :
+  - Adjusting the size of label in the input image around the box(no optimal values for font-size and thickness).
+  - More number faces detection than that present in the input image.
+ 
+  #Some examples showing working of face detection algorithm on real dataset.
 
 
 ![Screenshot 2023-12-30 231943](https://github.com/hrishi483/Facial-Emotion-Detection/assets/118972159/f548e666-830d-4961-bb99-d201456c212c)
